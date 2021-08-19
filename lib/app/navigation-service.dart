@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class NavigationService {
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
-  // static Route<dynamic> generateRoute(RouteSettings settings) {
-  //   return null;
-  // } //TODO
+  static Route<dynamic> generateRoute(RouteSettings settings) {
+    throw Exception('invalid route');
+  } //TODO
 
   Future<void> navigateTo(String routeName,
       {bool shouldReplace = false, Object? arguments}) {
