@@ -6,5 +6,5 @@ abstract class AuthenticationRepository {
   Future<void> signUp(
       {required String name, required String email, required String password});
 
-  Future<bool> checkLogInStatus();
+  bool checkLogInStatus();
 }
